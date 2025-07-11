@@ -17,6 +17,6 @@ jobs:
         run: |
           curl -X POST \
             -H "Accept: application/vnd.github+json" \
-            -u "${PAT_USER}:${PAT_TOKEN}" \
+            -u "${achyu-dev}:${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}" \
             https://api.github.com/repos/achyu-dev/gh-actions-test-repo/dispatches \
             -d '{"event_type":"org-push"}'
