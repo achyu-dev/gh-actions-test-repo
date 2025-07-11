@@ -27,7 +27,7 @@ jobs:
       - name: Try merging upstream/main
         run: |
           git checkout main
-          git merge upstream/main -m "Sync from upstream"
+          git merge upstream/main --allow-unrelated-histories -m "Sync from upstream"
         continue-on-error: true
 
       - name: On conflict, force-reset
