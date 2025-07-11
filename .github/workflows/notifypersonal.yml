@@ -13,7 +13,7 @@ jobs:
       - name: Trigger personal repo dispatch
         env:
           PAT_USER: your-github-username
-          PAT_TOKEN: ${{ secrets.PERSONAL_REPO_TOKEN }}
+          PAT_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
           curl -X POST \
             -H "Accept: application/vnd.github+json" \
