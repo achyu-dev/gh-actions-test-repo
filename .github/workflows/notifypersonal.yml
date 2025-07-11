@@ -16,6 +16,7 @@ jobs:
           PAT_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
           curl -X POST \
+            -H "Accept: application/vnd.github.everest-preview+json" \
             -H "Authorization: token ${PAT_TOKEN}" \
             https://api.github.com/repos/achyu-dev/gh-actions-test-repo/dispatches \
             -d '{"event_type":"org-push"}'
