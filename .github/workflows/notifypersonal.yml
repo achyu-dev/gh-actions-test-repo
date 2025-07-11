@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Trigger personal repo dispatch
         env:
-          PAT_USER: your-github-username
+          PAT_USER: achyu-dev
           PAT_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
           curl -X POST \
